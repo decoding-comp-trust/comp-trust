@@ -1,0 +1,10 @@
+model: "hf/compressed-llm/vicuna-13b-v1.3-awq@8bit_128g"
+type: CHAT
+conv_template: "vicuna_v1.1"
+
+model_loader: HF
+torch_dtype: BFLOAT16
+quant_file: null  # For AutoAWQ
+tokenizer_name: "lmsys/vicuna-13b-v1.3"
+trust_remote_code: true
+use_auth_token: true

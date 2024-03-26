@@ -1,0 +1,12 @@
+model: "hf/compressed-llm/llama-2-13b-chat-wanda-semistruct@0.5_1to2"
+type: CHAT
+conv_template: "llama-2"
+
+model_loader: HF
+torch_dtype: BFLOAT16
+quant_file: null
+tokenizer_name: meta-llama/Llama-2-13b-chat-hf
+trust_remote_code: true
+use_auth_token: true
+
+# dt-run --config-name="config" +advglue=benign ++model_config.model="$MODEL" ++model_config.conv_template="vicuna_v1.1" ++model_config.model_loader=HF ++model_config.tokenizer_name=lmsys/vicuna-13b-v1.3 ++model_config.torch_dtype=null ++advglue.task=\[sst2\]

@@ -1,0 +1,10 @@
+model: "hf/TheBloke/Llama-2-13B-chat-GPTQ@gptq-4bit-128g-actorder_True"
+type: CHAT
+conv_template: "llama-2"
+
+model_loader: HF
+torch_dtype: FLOAT16
+quant_file: null  # For AutoAWQ
+tokenizer_name: "meta-llama/Llama-2-13b-chat-hf"
+trust_remote_code: true
+use_auth_token: true

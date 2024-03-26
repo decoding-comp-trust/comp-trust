@@ -1,0 +1,11 @@
+model: "hf/compressed-llm/llama-2-13b-gptq@3bit_128g"
+type: CHAT
+conv_template: redpajama-incite-instruct
+
+model_loader: GPTQ
+torch_dtype: null
+quant_file: null  # For AutoAWQ
+tokenizer_name: "meta-llama/Llama-2-13b-hf"
+trust_remote_code: true
+use_auth_token: true
+disable_exllama: true

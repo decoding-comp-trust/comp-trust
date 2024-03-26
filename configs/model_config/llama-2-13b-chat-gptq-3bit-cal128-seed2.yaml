@@ -1,0 +1,11 @@
+model: "hf/efficient-llm/llama-2-13b-chat-gptq-larger-caliset-llama2-temp@3bit_128g_2seed"
+type: CHAT
+conv_template: "llama-2"
+
+model_loader: GPTQ
+torch_dtype: null
+quant_file: null  # For AutoAWQ
+tokenizer_name: "meta-llama/Llama-2-13b-chat-hf"
+trust_remote_code: true
+use_auth_token: true
+disable_exllama: true

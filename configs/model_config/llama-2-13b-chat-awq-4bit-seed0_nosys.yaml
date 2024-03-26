@@ -1,0 +1,11 @@
+model: "hf/efficient-llm/llama-2-13b-chat-awq-128example-randomseed@4bit_128g_0seed"
+type: CHAT
+conv_template: "llama-2_no_sys"
+
+model_loader: HF
+torch_dtype: BFLOAT16
+quant_file: null  # For AutoAWQ
+tokenizer_name: "meta-llama/Llama-2-13b-chat-hf"
+trust_remote_code: true
+use_auth_token: true
+disable_exllama: true
