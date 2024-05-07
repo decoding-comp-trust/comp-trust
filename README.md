@@ -45,6 +45,8 @@ CUDA_VISIBLE_DEVICES=1 python -m awq.entry --model_path meta-llama/Llama-2-13b-c
 
 ## Running Experiments
 
+Install the modified DecodingTrust following [this link](https://github.com/decoding-comp-trust/DecodingTrust?tab=readme-ov-file#getting-started).
+
 Due to the large volume of experiments, we recommend to run experiments using the Slurm job system.
 We provide [a example of slurm config file](configs/slurm_config.yaml).
 For each model, we provide a config file under [configs/model_config](configs/model_config).
@@ -97,8 +99,6 @@ git push
 Extract results to csv file (data/num_sheet.csv) which will be used for visualization.
 Run `python extract_csv.py`.
 
-
-> **From 10/25, all the aggregation should run smoothly and produce results whenever the jobs are finished. To manually aggregate results, check the following instructions.**
 
 * Adversarial Demonstrations
 
